@@ -1,3 +1,8 @@
+:root {
+	--color-green-500: oklch(72.3% .219 149.579);
+	--color-amber-500: oklch(76.9% .188 70.08);
+}
+
 *, ::before, ::after { box-sizing: border-box;}
 html, body { width: 100%; min-height: 100%; }
 
@@ -91,6 +96,7 @@ header {
 	--weekend-bg: #f8f8f8;
 
 	--day-off: #efc020;
+	--day-off: var(--color-amber-500);
 	--day-off-bg: #ffffea;
 }
 
@@ -132,7 +138,7 @@ header {
 	background-color: #e0e0e0;
 }
 .team-calendar .open { background-color: #fafffa; }
-.team-calendar .open .dot { background-color: #80f480; }
+.team-calendar .open .dot { background-color: #80f480; background-color: var(--color-green-500); }
 .team-calendar .day-off { background-color: var(--day-off-bg); }
 .team-calendar .day-off .dot { background-color: var(--day-off); }
 .team-calendar .holiday .dot { background-color: #f48080; }
@@ -154,6 +160,6 @@ header {
 	background-color: #e0e0e0;
 }
 .legend .day-off .dot { background-color: var(--day-off); }
-.legend .open .dot { background-color: #80f480; }
+.legend .open .dot { background-color: #80f480; background-color: var(--color-green-500); }
 .legend .weekend .dot { background-color: var(--weekend-bg); }
 .legend .holiday .dot { background-color: #f48080; }
